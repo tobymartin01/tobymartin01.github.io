@@ -26,7 +26,9 @@
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MAIN BODY $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
 
 <body class="noscrollbar">
+    <!-- Import Scripts -->
     <script src="js/revealOnScroll.js"></script>
+ 
 
     <div class="top navbar" id="navbar2">
         <script src="js/navbar.js"></script>
@@ -46,7 +48,7 @@
         </div>
     </div>
 
-    <div class="w3-content w3-container w3-padding-64 white" id="about">
+    <div class="w3-content w3-container w3-padding-64 white hidden-scroll" id="about">
         <div class="">
             <h3 class="center">ABOUT ME</h3>
             <p class="center"><em>Sample placeholder text</em></p>
@@ -173,37 +175,6 @@
 </footer>
 
 <script>
-
-    // Modal Image Gallery
-    function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-    }
-
-    // Add solid background to Navbar on scroll
-    var myNav = document.getElementById('navbar2');
-    window.onscroll = function () {
-        if (document.body.scrollTop >= screen.height || document.documentElement.scrollTop >= screen.height) {
-            myNav.classList.add("nav-coloured");
-            myNav.classList.remove("nav-transparent");
-        }
-        else {
-            myNav.classList.add("nav-transparent");
-            myNav.classList.remove("nav-coloured");
-        }
-    };
-
-    // Cookie Preferences Notification
-
-    var cookieWrapper = document.getElementById('cookieWrapper')
-
-    function cookiePress() {
-        console.log("cookies understood");
-        cookieWrapper.classList.add("hidden");
-    }
-
     //reveal on scroll
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -218,9 +189,6 @@
 
     const hiddenElements = document.querySelectorAll('.hidden-scroll');
     hiddenElements.forEach((el) => observer.observe(el));
-
-
-
 </script>
 
 </html>
