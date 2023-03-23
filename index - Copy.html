@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Website Title in Tabs Bar-->
+    <title>Marto</title>
+
+    <link rel="icon" href="assets/icons/mug2.ico" type="image/ico" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="information about the page (usually two sentences)">
+    <meta name="Author" conent="Toby Martin">
+
+    <!-- Import css Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/mainstyle.css" />
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+
+</head>
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+<body class="example">
+    <!-- Navbar (sit on top) -->
+    <div class="top navbar" id="navbar2">
+        <div class="bar opacity-min" id="navbar">
+            <a href=" #home" class="navbar-item-left button "><img src="/assets/media/mug.png" class="rounded"></a>
+
+            <a href="#contact" class="navbar-item-right nav-button opacity-min">CONTACT</a>
+            <a href="#media" class="navbar-item-right nav-button opacity-min">PORTFOLIO</a>
+            <a href="#about" class="navbar-item-right nav-button opacity-min">ABOUT</a>
+            <!--
+                <a href="dnd.html" class="navbar-item-right nav-button opacity-min">DND</a>
+            -->
+
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bg-1 opacity-min" id="home">
+        <div class="display-middle">
+            <span class="animate-bottom center-heading w3-padding-large border-black w3-xlarge w3-wide"
+                style="font-family: monospace; border-radius: 1000px; white-space: nowrap;">m a r t o</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64 white" id="about">
+        <div class="hidden-scroll">
+        <h3 class="center">ABOUT ME</h3>
+        <p class="center"><em>Sample placeholder text</em></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="w3-row hidden-scroll">
+            <div class="w3-col m6 center">
+                <p><b><i class="fa fa-user"></i> @ItsJustMarto</b></p><br>
+                <img src="/assets/media/mug.png" class="image" width="500" height="500">
+            </div>
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-padding-large">
+                <p><br><br>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Media Text -->
+    <div class="bg-2 w3-display-container opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide hidden-scroll">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Media Section) -->
+    <div class="w3-content w3-container w3-padding-64 white" id="media">
+        <div>
+        <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make
+                them bigger</em></p><br>
+        </div>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3 hidden-scroll">
+                <img src="/assets/media/500x500-head.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="Old Marto Head">
+            </div>
+
+            <div class="w3-col m3 hidden-scroll">
+                <img src="/assets/media/mug.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="Marto mug render by @noon">
+            </div>
+
+            <div class="w3-col m3 hidden-scroll">
+                <img src="/assets/media/offlinevideo.gif" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="offline video">
+            </div>
+
+            <div class="w3-col m3 hidden-scroll">
+                <img src="/assets/media/pixel_mug.PNG" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="pixel mug">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3 hidden-scroll">
+                <img src="/assets/media/brb.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="The mist">
+            </div>
+
+            <div class="w3-col m3 hidden-scroll">
+                <img src="/assets/media/raze.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="Raze">
+            </div>
+
+            <div class="w3-col m3 hidden-scroll">
+                <img src="/assets/media/sage.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="Sage">
+            </div>
+
+            <div class="w3-col m3 hidden-scroll">
+                <img src="/assets/media/fist-112.png" style="width:100%" onclick="onClick(this)" class="portfolio-image"
+                    alt="Fist">
+            </div>
+        </div>
+    </div>
+
+    <!-- Full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with CONTACT -->
+    <div class="bg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide hidden-scroll">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64 hidden-scrol white" id="contact">
+        <h3 class="w3-center">Get In Touch</h3>
+        <p class="w3-center"><em>I'd love to hear from you!</em></p>
+
+        <div class="center">
+            <img src="assets/media/blue-m.png" class="bg-1"
+                style="scale: 0.5; max-width: 200px; border-radius: 1000px; border: 2px solid black;">
+        </div>
+        <div class="center" style="padding-top: 2.5%;">
+            <div class="w3-large w3-margin-bottom">
+                <div>
+                    <a href="https://twitch.tv/itsjustmarto"><img src="/assets/media/twitch.png" class="social"></a>
+                    <a href="https://discord.gg/3MUV5vU9Xx"><img src="/assets/media/discord.png" class="social"></a>
+                    <a href="https://www.instagram.com/itsjustmarto/"><img src="/assets/media/instagram.png"
+                            class="social"></a>
+                    <a href="https://twitter.com/itsjustmarto"><img src="/assets/media/twitter.png" class="social"></a>
+                    <a href="https://www.youtube.com/channel/UCJ2uGXvETNVUO6ioOuHT5xA"><img
+                            src="/assets/media/youtube.png" class="social"></a>
+                </div>
+                <!--
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +44
+                00000000000<br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                mail@mail.com<br>
+                -->
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="cookie-wrapper" id="cookieWrapper">
+        <h2>Cookie Consent</h2>
+        <p>This website uses cookies to ensure an optimal user experience</p>
+        <div class="cookie-interact">
+        <button onclick="cookiePress()" class="cookie-button">I Understand</button>
+        <a class="cookie-a" href="https://www.termsfeed.com/live/080ad019-0f83-4479-b411-a88f5db06ea5">Learn More</a>
+        </div>
+    </div>
+
+</body>
+
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+<!-- Footer -->
+<footer class="center white" style="padding-bottom: 0.5%;">
+
+
+    <div class="">
+        <a href="#home" class="footer-element" style="text-decoration: none;">Marto © 2023</a>
+        <a href="https://www.termsfeed.com/live/080ad019-0f83-4479-b411-a88f5db06ea" class="footer-element" style="text-decoration: none; padding-left: 50px">Privacy & Legal</a>
+        <a href="#about" class="footer-element" style="text-decoration: none; padding-left: 50px">About</a>
+        <a href="#media" class="footer-element" style="text-decoration: none; padding-left: 50px">Portfolio</a>
+        <a href="#contact" class="footer-element" style="text-decoration: none; padding-left: 50px">Contact</a>
+    </div>
+
+</footer>
+
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    // Add solid background to Navbar on scroll
+    var myNav = document.getElementById('navbar2');
+    window.onscroll = function () {
+        if (document.body.scrollTop >= screen.height || document.documentElement.scrollTop >= screen.height) {
+            myNav.classList.add("nav-coloured");
+            myNav.classList.remove("nav-transparent");
+        }
+        else {
+            myNav.classList.add("nav-transparent");
+            myNav.classList.remove("nav-coloured");
+        }
+    };
+
+    // Cookie Preferences Notification
+
+    var cookieWrapper = document.getElementById('cookieWrapper')
+
+    function cookiePress() {
+        console.log("cookies understood"); 
+        cookieWrapper.classList.add("hidden");
+    }
+
+    //reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-scroll');
+            } else {
+                entry.target.classList.remove('show-scroll');
+            }
+        });
+    });
+    
+    const hiddenElements = document.querySelectorAll('.hidden-scroll');
+    hiddenElements.forEach((el) => observer.observe(el));
+     
+
+
+</script>
+
+</html>
