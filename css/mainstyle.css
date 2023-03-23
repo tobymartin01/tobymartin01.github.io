@@ -263,6 +263,10 @@ img.rounded {
   opacity: 0.75
 }
 
+.clickable:hover {
+  cursor: pointer;
+}
+
 /* Horizontal Scroll TBD */
 
 

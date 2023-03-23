@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans" />
 
     <script defer src="js/revealOnScroll.js"></script>
     <script defer src="js/navbar.js"></script>
@@ -29,15 +29,15 @@
 
 <body class="noscrollbar">
     <!-- Import Scripts -->
-    
- 
+
+
 
     <div class="top navbar" id="navbar2">
-        
+
         <div class="bar opacity-min" id="navbar">
             <a href=" #home" class="navbar-item-left button "><img src="/media/placeholder.png" class="rounded"></a>
             <a href="#contact" class="navbar-item-right nav-button opacity-min">CONTACT</a>
-            <a href="#media" class="navbar-item-right nav-button opacity-min">PORTFOLIO</a>
+            <a href="#portfolio" class="navbar-item-right nav-button opacity-min">PORTFOLIO</a>
             <a href="#about" class="navbar-item-right nav-button opacity-min">ABOUT</a>
         </div>
     </div>
@@ -85,98 +85,61 @@
         </div>
     </div>
 
-        <!-- Second Parallax Image with Media Text -->
-        <div class="bg-2 w3-display-container opacity-min">
-            <div class="w3-display-middle hidden-scroll-fade">
-                <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-            </div>
+    <!-- Second Parallax Image with Media Text -->
+    <div class="bg-2 w3-display-container opacity-min">
+        <div class="w3-display-middle hidden-scroll-fade">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64 white" id="media">
+        <div>
+            <h3 class="w3-center">MY PROJECTS</h3>
+            <p class="w3-center"><em>Here are some of my latest pieces of work.<br>
+                    Click on the images to find out more</em></p><br>
         </div>
 
-    <div class="w3-content w3-container w3-padding-64 white" id="about">
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center hidden-scroll">
+            <div class="w3-col m3 clickable">
+                <img src="media/placeholder.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="Old Marto Head">
+            </div>
+
+            <div class="w3-col m3 clickable">
+                <img src="media/placeholder.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="Marto mug render by @noon">
+            </div>
+
+            <div class="w3-col m3 clickable">
+                <img src="media/placeholder.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="offline video">
+            </div>
+
+            <div class="w3-col m3 clickable">
+                <img src="media/placeholder.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="portfolio-image" alt="pixel mug">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="center white" style="padding-bottom: 0.5%;">
+
+
         <div class="">
-            <h3 class="center">ABOUT ME</h3>
-            <p class="center"><em>Sample placeholder text</em></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#home" class="footer-element" style="text-decoration: none;">Toby Martin</a>
+            <a href="https://www.termsfeed.com/live/080ad019-0f83-4479-b411-a88f5db06ea" class="footer-element"
+                style="text-decoration: none; padding-left: 50px">Privacy & Legal</a>
+            <a href="#about" class="footer-element" style="text-decoration: none; padding-left: 50px">About</a>
+            <a href="#media" class="footer-element" style="text-decoration: none; padding-left: 50px">Portfolio</a>
+            <a href="#contact" class="footer-element" style="text-decoration: none; padding-left: 50px">Contact</a>
         </div>
-        <div class="w3-row ">
-            <div class="w3-col m6 center">
-                <p><b><i class="fa fa-user"></i> @ItsJustMarto</b></p><br>
-                <img src="/media/placeholder.png" class="image" width="500" height="500">
-            </div>
-            <!-- Hide this text on small devices -->
-            <div class="w3-col m6 w3-padding-large">
-                <p><br><br>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="w3-content w3-container w3-padding-64 white" id="about">
-        <div class="">
-            <h3 class="center">ABOUT ME</h3>
-            <p class="center"><em>Sample placeholder text</em></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="w3-row ">
-            <div class="w3-col m6 center">
-                <p><b><i class="fa fa-user"></i> @ItsJustMarto</b></p><br>
-                <img src="/media/placeholder.png" class="image" width="500" height="500">
-            </div>
-            <!-- Hide this text on small devices -->
-            <div class="w3-col m6 w3-padding-large">
-                <p><br><br>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </div>
-    </div>
-</body>
+    </footer>
 
-<!-- Footer -->
-<footer class="center white" style="padding-bottom: 0.5%;">
-
-
-    <div class="">
-        <a href="#home" class="footer-element" style="text-decoration: none;">Toby Martin</a>
-        <a href="https://www.termsfeed.com/live/080ad019-0f83-4479-b411-a88f5db06ea" class="footer-element"
-            style="text-decoration: none; padding-left: 50px">Privacy & Legal</a>
-        <a href="#about" class="footer-element" style="text-decoration: none; padding-left: 50px">About</a>
-        <a href="#media" class="footer-element" style="text-decoration: none; padding-left: 50px">Portfolio</a>
-        <a href="#contact" class="footer-element" style="text-decoration: none; padding-left: 50px">Contact</a>
-    </div>
-
-</footer>
-
-<script>
-</script>
+    <script>
+    </script>
 
 </html>
