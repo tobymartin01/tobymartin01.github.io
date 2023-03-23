@@ -19,15 +19,16 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"/>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <script defer src="js/revealOnScroll.js"></script>
 
 </head>
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MAIN BODY $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
 
 <body class="noscrollbar">
     <!-- Import Scripts -->
-    <script src="js/revealOnScroll.js"></script>
+    
  
 
     <div class="top navbar" id="navbar2">
@@ -42,14 +43,14 @@
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bg-1 opacity-min" id="home">
-        <div class="display-middle splashLogo">
-            <span class="splashLogo animate-bottom center-heading border-black"
+        <div class="display-middle">
+            <span class="splashLogo animate-bottom border-black"
                 style="font-family: monospace; border-radius: 1000px; white-space: nowrap;">TOBY MARTIN</span>
         </div>
     </div>
 
-    <div class="w3-content w3-container w3-padding-64 white hidden-scroll" id="about">
-        <div class="">
+    <div class="w3-content w3-container w3-padding-64 white" id="about">
+        <div class="hidden-scroll">
             <h3 class="center">ABOUT ME</h3>
             <p class="center"><em>Sample placeholder text</em></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -63,7 +64,7 @@
                 laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
-        <div class="w3-row ">
+        <div class="w3-row hidden-scroll-right">
             <div class="w3-col m6 center">
                 <p><b><i class="fa fa-user"></i> @ItsJustMarto</b></p><br>
                 <img src="/media/placeholder.png" class="image" width="500" height="500">
@@ -175,20 +176,6 @@
 </footer>
 
 <script>
-    //reveal on scroll
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            console.log(entry)
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show-scroll');
-            } else {
-                entry.target.classList.remove('show-scroll');
-            }
-        });
-    });
-
-    const hiddenElements = document.querySelectorAll('.hidden-scroll');
-    hiddenElements.forEach((el) => observer.observe(el));
 </script>
 
 </html>
