@@ -271,6 +271,10 @@ img.rounded {
 
 /* Horizontal Scroll TBD */
 
+/* --------------------TEXT--------------------------- */
+.white-text {
+  color: white;
+}
 
 /* --------------------REVEAL ON SCROLL--------------------------- */
 
@@ -321,4 +325,13 @@ img.rounded {
 .footer-element:hover {
   font-size: 100.25%;
   transition: font-size 50ms linear;
+}
+
+/* --------------------Portfolio Content--------------------------- */
+.portfolio-content-container {
+  width: 90%;
+  background-color: black;
+  height: 90%;
+  border-radius: 50px;
+  padding: 30px;
 }
