@@ -27,3 +27,18 @@ const observer_fade = new IntersectionObserver((entries) => {
 
 const hiddenElementsfade = document.querySelectorAll('.hidden-scroll-fade');
 hiddenElementsfade.forEach((el) => observer_fade.observe(el));
+
+//reveal on scroll bottom
+const observer_bottom = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-scroll-bottom');
+        } else {
+            entry.target.classList.remove('show-scroll-bottom');
+        }
+    });
+});
+
+const hiddenElementsbottom = document.querySelectorAll('.hidden-scroll-bottom');
+hiddenElementsbottom.forEach((el) => observer_bottom.observe(el));
