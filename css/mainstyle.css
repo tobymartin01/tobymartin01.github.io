@@ -286,14 +286,15 @@ img.rounded {
 }
 
 .hidden-scroll-right {
+  visibility: hidden;
   opacity: 0;
   filter: blur(5px);
   transform: translateX(100%);
   transition: all .75s ease-in-out;
-  overflow: hidden;
 }
 
 .show-scroll-right {
+  visibility: visible;
   opacity: 1;
   filter: blur(0);
   transform: translateX(0%);
