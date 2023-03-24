@@ -330,8 +330,6 @@ img.rounded {
 /* --------------------Portfolio Content--------------------------- */
 .portfolio-content-container {
   width: 90%;
-  background-color: black;
   height: 90%;
-  border-radius: 50px;
   padding: 30px;
 }
