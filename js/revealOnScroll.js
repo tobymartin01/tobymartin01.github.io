@@ -42,3 +42,18 @@ const observer_bottom = new IntersectionObserver((entries) => {
 
 const hiddenElementsbottom = document.querySelectorAll('.hidden-scroll-bottom');
 hiddenElementsbottom.forEach((el) => observer_bottom.observe(el));
+
+//reveal on scroll top
+const observer_top = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-scroll-top');
+        } else {
+            entry.target.classList.remove('show-scroll-top');
+        }
+    });
+});
+
+const hiddenElementstop = document.querySelectorAll('.hidden-scroll-top');
+hiddenElementstop.forEach((el) => observer_top.observe(el));

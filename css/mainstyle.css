@@ -40,6 +40,7 @@ h3 {
   width: 100%;
   height: 40px;
   z-index: 1;
+  overflow:hidden;
 }
 
 .nav-coloured {
@@ -67,6 +68,7 @@ h3 {
 }
 
 .navbar-item-right {
+  font-size: small;
   padding: 8px 16px;
   float: right;
   width: auto;
@@ -294,7 +296,7 @@ img.rounded {
 .hidden-scroll-fade {
   opacity: 0;
   filter: blur(5px);
-  transition: all .75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 .show-scroll-fade {
@@ -312,6 +314,19 @@ img.rounded {
 .show-scroll-bottom {
   opacity: 1;
   transform: translateY(0%);
+  filter: blur(0);
+}
+
+.hidden-scroll-top {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-700%)!important;
+  transition: all .7s ease-in-out;
+}
+
+.show-scroll-top {
+  opacity: 1;
+  transform: translateY(0%) !important;
   filter: blur(0);
 }
 
