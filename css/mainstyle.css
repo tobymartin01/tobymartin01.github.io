@@ -117,11 +117,10 @@ img.rounded {
 }
 
 .nav-button:hover {
-  background-color: gray;
   color: white;
   border-radius: 10px;
   transition: background-color 300ms ease-in;
-  scale: 1.2;
+  transform: scale(120%);
 }
 
 /* -------------------BACKGROUND GRADIENTS---------------------- */
