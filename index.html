@@ -220,7 +220,14 @@
 
     </div>
 
-    
+    <div class="cookie-wrapper" id="cookieWrapper">
+        <h2>&#127850; Cookie Consent</h2>
+        <p>This website uses cookies to ensure an optimal user experience</p>
+        <div class="cookie-interact">
+        <button onclick="cookiePress()" class="cookie-button">I Understand</button>
+        <a class="cookie-a" href="https://www.termsfeed.com/live/080ad019-0f83-4479-b411-a88f5db06ea5">Learn More</a>
+        </div>
+    </div>
 
     </body>
 
@@ -242,6 +249,19 @@
     </footer>
 
     <script>
+        // Cookie Preferences Notification
+
+        var cookieWrapper = document.getElementById('cookieWrapper')
+
+        function cookiePress() {
+            //sets cookie stored for one month then auto expire
+            document.cookie = "CookieBy=TobyMartinLive; max-age="+60*60*24*30;
+            console.log("cookies understood"); 
+            cookieWrapper.classList.add("hidden");
+            }
+        
+            let checkCookie = document.cookie.indexOf("CookieBy=TobyMartinLive");
+            checkCookie != -1 ? cookieWrapper.classList.add("hidden"): cookieWrapper.classList.remove("hidden");
     </script>
 
 </html>

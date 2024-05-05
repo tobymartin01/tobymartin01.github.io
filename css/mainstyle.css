@@ -152,6 +152,49 @@ img.rounded {
   min-height: 100%;
 }
 
+/* --------------------COOKIE NOTIFICATION------------------------ */
+.cookie-wrapper {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  background-color: white;
+  border-radius: 15px;
+  max-width: 360px;
+  padding: 25px 25px 30px 25px;
+  text-align: center;
+  box-shadow: black 3px 3px 10px;
+}
+
+.cookie-wrapper p{
+  color: #858585;
+}
+
+.cookie-interact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cookie-button{
+  border-radius: 5px;
+  background-color: #858585;
+  padding: 10px 15px;
+  font-weight: 500px;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: black 3px 3px 10px;
+  cursor: pointer;
+}
+
+.cookie-button:active{
+  box-shadow: none;
+}
+
+.cookie-a{
+  margin: 0 10px;
+}
+
 /* --------------------------------------------------------- */
 
 .splashLogo {
