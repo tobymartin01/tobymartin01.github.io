@@ -117,7 +117,7 @@ img.rounded {
 }
 
 .nav-button:hover {
-  color: white;
+  color: black;
   border-radius: 10px;
   transition: background-color 300ms ease-in;
   transform: scale(120%);
